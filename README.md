@@ -122,6 +122,6 @@ python nest_thermostat_faq_chatbot.py
 
 The chatbot successfully answered questions that were covered by the Nest support documentation. The most accurate answers happened when the question matched text in the documentation closely (for example, setup steps or feature explanations). The script prints the source URLs used for each answer, which helps confirm that responses are grounded in the dataset.
 
-![Chatbot running](https://imgur.com/a/DwgDaNZ)
+![Chatbot running](https://i.imgur.com/DmXXH8S.png)
 
 
