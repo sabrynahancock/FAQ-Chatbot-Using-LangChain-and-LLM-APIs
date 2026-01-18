@@ -88,8 +88,34 @@ The chatbot utilizes the RAG pipeline:
 ```bash
 python -m venv .venv
 source .venv/bin/activate   # Mac/Linux
-# .venv\Scripts\activate    # Windows PowerShell
+# .venv\Scripts\activate    # Windows PowerShell 
 
+### Step 2: Install dependencies
 
+```bash
+pip install -U langchain langchain-community langchain-openai langchain-text-splitters langchain-chroma chromadb beautifulsoup4 requests
+Step 3: Set OpenAI API Key
+
+bash
+Copy code
+export OPENAI_API_KEY="YOUR_KEY_HERE"
+Step 4: Run the chatbot
+
+bash
+Copy code
+python nest_thermostat_faq_chatbot.py
+Step 5: Ask questions
+
+### Examples:
+
+“How do I set a temperature schedule?”
+
+“How do I reset my Nest thermostat?”
+
+Results
+
+The chatbot successfully answered questions that were covered by the Nest support documentation. The most accurate answers happened when the question matched text in the documentation closely (for example, setup steps or feature explanations). The script prints the source URLs used for each answer, which helps confirm that responses are grounded in the dataset.
+
+![Chatbot running] (https://imgur.com/a/DwgDaNZ)
 
 
