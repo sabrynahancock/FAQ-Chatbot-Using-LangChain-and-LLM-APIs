@@ -94,17 +94,23 @@ source .venv/bin/activate   # Mac/Linux
 
 ```bash
 pip install -U langchain langchain-community langchain-openai langchain-text-splitters langchain-chroma chromadb beautifulsoup4 requests
-Step 3: Set OpenAI API Key
+```
 
-bash
-Copy code
+### Step 3: Set OpenAI API Key
+
+```bash
+
 export OPENAI_API_KEY="YOUR_KEY_HERE"
-Step 4: Run the chatbot
+```
 
-bash
-Copy code
+### Step 4: Run the chatbot
+
+```bash
+
 python nest_thermostat_faq_chatbot.py
-Step 5: Ask questions
+```
+
+### Step 5: Ask questions
 
 ### Examples:
 
@@ -112,10 +118,10 @@ Step 5: Ask questions
 
 “How do I reset my Nest thermostat?”
 
-Results
+### Results
 
 The chatbot successfully answered questions that were covered by the Nest support documentation. The most accurate answers happened when the question matched text in the documentation closely (for example, setup steps or feature explanations). The script prints the source URLs used for each answer, which helps confirm that responses are grounded in the dataset.
 
-![Chatbot running] (https://imgur.com/a/DwgDaNZ)
+![Chatbot running](https://imgur.com/a/DwgDaNZ)
 
 
